@@ -1,0 +1,98 @@
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+/*
+h1 {
+  font-size: 2.5rem;
+  
+  @include media-breakpoint-up(md) {
+    font-size: 6rem;
+    line-height: 6rem; 
+  }
+}
+h2 {
+  font-size: 2rem;
+  @include media-breakpoint-up(md) {
+    font-size: 5rem;
+    line-height: 5rem; 
+  }
+}
+h3 {
+  font-size: 1.5rem;
+  @include media-breakpoint-up(md) {
+    font-size: 4rem;
+    line-height: 4rem; 
+  }
+}
+h4 {
+  font-size: 1.2rem;
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+    line-height: 3rem; 
+  }
+}
+h4 {
+  font-size: 1rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+    line-height: 2rem; 
+  }
+}*/
+
+// List Items - list items will get bullets when in an article only
+ol, ul {
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+.text-white, 
+.text-light {
+  a { 
+    color: $white;
+  }
+}
+
+// Font Sizes
+.font-xs, .font-xs p, 
+.font-sm, .font-sm p, 
+.font-md, .font-md p, 
+.font-default, .font-default p, 
+.font-lg, .font-lg p {
+  line-height: $line-height-lg;
+}
+
+.font-xs {
+  font-size: $font-size-base / 1.5;
+}
+.font-sm {
+  font-size: $font-size-base / 1.27;
+}
+.font-default {
+  font-size: $font-size-base;
+}
+.font-lg {
+  font-size: $font-size-base * 1.25;
+}
+
+// Text Colors
+
+.text-dark {
+  color: $font-color-base !important;
+}
+
+.text-primary {
+  color: $primary;
+  a {
+    color: $primary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.text-light {
+  color: $gray-800 !important;
+}

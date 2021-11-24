@@ -1,0 +1,69 @@
+// SPACING
+
+// Margins
+//---------------------------------------------------------------------
+
+.margin-sm { @include margin(sm); }
+.margin-md { @include margin(md); }
+.margin-lg { @include margin(lg); }
+.margin-xl { @include margin(xl); }
+
+// Padding
+//---------------------------------------------------------------------
+.padding-sm { @include padding(sm); }
+.padding-md { @include padding(md); }
+
+// Hero
+//---------------------------------------------------------------------
+
+.hero-md, 
+.hero-lg, 
+.hero-xl {
+  @include hero(md); 
+}
+
+@include media-breakpoint-up(md) {
+  .hero-md {
+    @include hero(md); 
+  }
+  .hero-lg {
+    @include hero(lg); 
+  }
+  .hero-xl {
+    @include hero(xl); 
+  }
+}
+
+// Section Padding
+//---------------------------------------------------------------------
+
+.section-md { @include section(md); }
+.section-lg { @include section(lg); }
+.section-xl { @include section(xl); }
+
+.section-py-sm { @include section-y(sm); }
+.section-py-md { @include section-y(md); }
+.section-py-lg { @include section-y(lg); }
+.section-py-xl { @include section-y(xl); }
+
+.section-py-md, 
+.section-py-lg, 
+.section-py-xl { 
+  @include media-breakpoint-down(md) {
+    @include section-y(md);
+  }
+ }
+
+.section-px-sm { @include section-x(sm); }
+.section-px-md { @include section-x(md); }
+.section-px-lg { @include section-x(lg); }
+.section-px-xl { @include section-x(xl); }
+
+.section-px-md, 
+.section-px-lg, 
+.section-px-xl { 
+  @include media-breakpoint-down(md) {
+    @include section-x(sm);
+  }
+}
+

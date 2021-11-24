@@ -1,0 +1,63 @@
+.btn-primary, 
+.btn-secondary,  
+.btn-ghost {
+  border-radius: 0.6rem;
+  padding-top: $font-size-base * .45;
+  padding-right: $font-size-base * 3.65;
+  padding-left: $font-size-base * 3.65;
+  padding-bottom: $font-size-base * .7;
+}
+
+.btn-ghost {
+  background-color: rgba($white, 0.29);
+  color: $white;
+
+  &:focus, &:hover {
+    background-color: rgba($white, 0.5);
+    color: $white;
+  }
+}
+
+.btn-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &.btn-row-stacked {
+    > div {
+      &:not(:last-of-type) {
+        @include media-breakpoint-up(md) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &.btn-row-inline {
+
+    &.justify-content-center {
+      > div {
+        text-align: center;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+      }
+    }
+
+    &.justify-content-start {
+      > div {
+        &:not(:last-of-type) {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+
+  > div {
+    margin-bottom: 2rem;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+  }
+}

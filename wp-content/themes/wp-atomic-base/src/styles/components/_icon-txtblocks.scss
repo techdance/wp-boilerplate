@@ -1,0 +1,30 @@
+.txtblock-icon-beside {
+    
+  .col-block {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .icon {
+      width: 10rem;
+      margin: 0 auto 2rem;
+
+      @include media-breakpoint-up(md) {
+        margin: 0 2rem 0 0;
+      }
+      
+      img {
+        @include media-breakpoint-up(md) {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .txtblock {
+      @include media-breakpoint-up(md) {
+        flex: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+// Backgrounds
+
+.bg-dark {
+  background-color: $gray-800;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-light {
+  background-color: $gray-200;
+}
+
+.bg-gradient-dark {
+  @include media-breakpoint-down(lg) {
+    background-color: $gray-800;
+  }
+  &.bg-gradient-horizontal {
+    background: linear-gradient(180deg, rgba($gray-800, 0.9) 31.84%, rgba($gray-800, 0.891) 37.04%, rgba($gray-800, 0.783) 47.95%, rgba($gray-800, 0) 74.93%);
+  }
+  &.bg-gradient-vertical {
+    @include media-breakpoint-up(lg) {
+      background: linear-gradient(90.78deg, rgba($gray-800, 0.9) 31.84%, rgba($gray-800, 0.891) 37.04%, rgba($gray-800, 0.783) 47.95%, rgba($gray-800, 0) 74.93%);
+    }
+  }
+
+  h1, h2, h3, h4, p, p a {
+    color: $white;
+  }
+}
+
+.bg-gradient-light {
+  @include media-breakpoint-down(lg) {
+    background-color: $white;
+  }
+
+  &.bg-gradient-horizontal {
+    background: linear-gradient(180deg, $white 31.84%, rgba($white, 0.99) 39.96%, rgba($white, 0.87) 48.4%, rgba($white, 0) 57.43%);
+  }
+  &.bg-gradient-vertical {
+    @include media-breakpoint-up(lg) {
+      background: linear-gradient(90.78deg, $white 31.84%, rgba($white, 0.99) 39.96%, rgba($white, 0.87) 48.4%, rgba($white, 0) 57.43%);
+    }
+    
+  }
+
+  h1, h2, h3, h4, p, p a{
+    color: $font-color-base;
+  }
+}

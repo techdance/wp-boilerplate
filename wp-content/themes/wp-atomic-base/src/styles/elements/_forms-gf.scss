@@ -1,0 +1,141 @@
+// Gravity Form Styles 
+
+.gform_wrapper {
+  width: 100%; 
+  
+  ul.gform_fields {
+    display: flex !important;
+    flex-wrap: wrap !important;
+
+    li {
+			label {
+				color: $white;
+			}
+      input {
+        width: 100% !important;
+      }
+    }
+  }
+
+  // checkbox & radio label alignment
+  ul.gfield_checkbox {
+		@include media-breakpoint-up(md) {
+			column-count: 2;
+			column-gap: 87px;
+		}
+  }
+
+  ul.gfield_checkbox li label, 
+  ul.gfield_radio li label {
+    margin-left: 1rem;
+	}
+	
+	// styled select dropdowns
+	$background: transparent;
+	$select-background: transparent;
+	$select-border: 26px;
+	
+	// select wrapper
+	.ginput_container_select {
+		background-color: $white;
+		border: 2px solid $white;
+		color: $black;
+		font-family: $font-family-sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		height: 4.9rem;
+		position: relative;
+		text-align: left;
+		width: 100%;
+	
+		&:after {
+			content:"";
+			width: 0;
+			height: 0;
+			border: 7px solid #000;
+			border-color: $black transparent transparent transparent;
+			position: absolute;
+			top: 2rem; right: 2rem;
+		}
+	
+		// select field
+		.gfield_select {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+			background: none;
+			border: 1px solid white !important;
+			border-radius: 0;
+			height: 4.4rem;
+			padding: 0.5rem 0 0 0.8rem !important;
+			width: 100% !important;
+		}
+	}
+	
+	// submit
+
+  .gform_footer {
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    background-color: $primary;
+    border-radius: $border-radius;
+    border: 1px solid $primary;
+    color: $black;
+    display: inline-block;
+    font-size: $input-btn-font-size;
+    font-weight: 700 !important;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    line-height: 1.5;
+  }
+  input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    border: 1px solid $white !important;
+    padding: 1rem !important;
+  }
+  
+	// required and validation styles
+	.gfield_required {
+		color: $white !important;
+	}
+	.validation_message {
+		color: $red !important;
+	}
+	li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper li.gfield_error textarea {
+		border: 1px solid $red !important;
+	}
+		
+  div.validation_error {
+		color: $white !important;
+		border-top: 2px solid $white !important;
+		border-bottom: 2px solid $white !important;
+    font-weight: 300;
+  }
+
+  li.gfield.gfield_error, 
+  li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: transparent !important;
+    margin-bottom: 6px!important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  .field_description_below {
+    .gfield_description {
+      padding-top: 0.8rem;
+    }
+  }
+
+  .gform_ajax_spinner {
+    display: none !important;
+  }
+}
+
+.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label, 
+.gform_wrapper li.gfield_error ul.gfield_checkbox, 
+.gform_wrapper li.gfield_error ul.gfield_radio,
+.gform_wrapper .gfield_error .gfield_label {
+	color: $red !important;
+}

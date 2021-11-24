@@ -1,0 +1,108 @@
+// Site Colors
+$blue:    rgb(0, 137, 249) !default;
+$darkblue : rgb(33, 61, 87) !default;
+$red:     #dc3545 !default;
+$orange:  #B86728 !default;
+$yellow:  #ffc107 !default;
+$black: #000000;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #f5f5f5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #3C3C3C !default;
+$gray-900: #2B2F33 !default;
+
+$primary:       $darkblue !default;
+$secondary:     $blue !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $darkblue,
+    "secondary":  $blue,
+  ),
+  $theme-colors
+);
+
+$font-color-base: $black;
+
+// Components
+$border-color: $black !default;
+
+// Spacing
+//
+// Define margins and padding for component elements and sections
+
+// Margins
+$margins: (
+  sm: 2.5rem,
+  md: 5rem,
+  lg: 7.5rem,
+  xl: 10rem,
+);
+
+$padding: (
+  sm: 2.25rem,
+  md: 3rem
+);
+
+$sections: (
+  sm: 2.5rem,
+  md: 5rem,
+  lg: 7.5rem,
+  xl: 10rem,
+);
+
+$hero: (
+  md: 5rem,
+  lg: 10rem,
+  xl: 15rem,
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 1440px,
+  md: 1440px,
+  lg: 1440px,
+  xl: 1440px
+) !default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           15px !default;
+$grid-row-columns:            6 !default;
+
+// Headings
+$headings-font-weight: 600 !default;
+
+// Typography
+$font-family-sans-serif: sofia-pro,sans-serif;
+$font-family-condensed: sofia-pro-condensed,sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              2rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+// Links
+$link-color:                              $secondary !default;
+$link-decoration:                         none !default;
+$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-decoration:                   none !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   3rem !default;

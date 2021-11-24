@@ -1,0 +1,48 @@
+
+
+// Articles
+
+article {
+  
+  h1, h2, h3, h4, h5, h6, p {
+    display: inline-block;
+    margin-bottom: $font-size-base * 1.2;
+    width: 100%; 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+  }
+  h2, h3, h4, h5, h6  {
+    margin-top: $font-size-base * 0.75;
+  }
+  // List Items - list items will get bullets when in an article only
+  // Main list styles are in type.scss
+  ol, ul {
+    @extend p;
+    padding-left: 2rem;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+.article-offset-top { // for blocks that stack with an article
+  margin-top: $font-size-base * 1.75;
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+}
+
+.article-offset-btm { // for blocks that stack with an article
+  margin-bottom: $font-size-base * 1.75;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+}
+.article-offset-btm-sm { // used on elements within the article to add extra spacing on mobile when stacked
+  margin-bottom: $font-size-base * 1;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+}

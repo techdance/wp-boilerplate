@@ -1,0 +1,192 @@
+* {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-font-smoothing: antialiased;
+}
+
+:focus {
+	outline: 0!important;
+}
+#login {
+	padding-top: 50px;
+	width:100%
+}
+body, body.login {background: #fff;height: 100%;color: #fff;font: 1rem 'noto-sans', sans-serif;}
+
+.login h1 {
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding-right: 33px;
+}
+body.login h1 a {
+	background-color: #ffffff;
+
+	/* Make it a logo */
+	background-image: url('/wp-content/uploads/2020/10/dc-logo.png');
+	background-size: 300px;
+	font-size: 1px; 
+	color: transparent;
+	padding: 13px 147px; 
+
+	/* Make it the site name
+	background-image: none;
+	background-size: auto;
+	color: #000000;
+	font: 4rem 'Noto Sans', sans-serif;
+	font-weight:400;
+	padding: 15px 30px;
+	text-transform: capitalize;
+	*/
+	
+	display: inline-block;
+	height: auto;
+	line-height: 4rem;
+	margin: 0 auto;
+	opacity: 1;
+	text-align: center;
+	-webkit-transition: .25s ease-in background-color;
+	-moz-transition: .25s ease-in background-color;
+	transition: .25s ease-in background-color;	
+	text-indent: 0;
+	width: auto;
+}
+
+body.login h1 a:hover {opacity: 1; color: #000000;}
+
+body.login form#loginform {
+	background: #f8f8f9;
+	border: 4px double #ccc;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: 0 0 10px 0 #D6D6D6 inset;
+	width: 30%;
+	margin: 0 auto;
+}
+
+body.login #login_error {
+	color: #FF4342;
+	width: 30%;
+	margin: 0 auto 20px;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+
+}
+
+.login #nav {text-align: center}
+
+.login .message,
+.login .error {
+	color: #999;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	background: transparent;
+
+}
+
+.login form {padding:26px 24px 26px}
+
+form#loginform label {color: #777}
+form#loginform label br {display: none;}
+
+form#loginform p:nth-child(3) {margin: 0 0 10px;clear:left;}
+
+form#loginform p:nth-child(3) br {display: none;}
+
+form#loginform p:nth-child(3) a {text-decoration: underline;}
+
+form#loginform input[type="text"], form#loginform input[type="password"] {
+	font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #DDDDDD;
+	opacity: 0.6;
+	vertical-align: baseline;
+	border: 0;
+	border-bottom: 2px solid #ccc;
+	padding: 10px 10px 4px;
+	color: #111!important;
+	font-size: 20px;
+}
+
+form#loginform input[type="text"]:focus, form#loginform input[type="password"]:focus {
+	border-bottom: 2px solid #ccc;
+	opacity: 1;
+}
+
+form#loginform p.forgetmenot label {
+	position: relative;
+	background-image: url('../images/checkbox.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding: 2px 0 0 24px;
+	height: 18px;
+	display: inline-block;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
+
+form#loginform p.forgetmenot label input[type="checkbox"] {position: absolute; left: 0; top:7px;width: 16px; height: 16px; display: block; cursor: pointer;}
+
+form#loginform p.submit input[type="submit"] {
+	border: 0;
+	border-bottom: none;
+	font-weight: 600;
+	color: #fff;
+	text-shadow: none;
+	text-transform: uppercase;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
+	box-shadow: none;
+	padding: 1px 12px 0;
+	background: #000000;
+	border: 1px solid #000000;
+}
+
+#login form p.submit {margin-top:10px;clear:left;float: left}
+form#loginform p.submit input[type="submit"]:hover {
+	color: #000000;
+	background: #fff;
+	border: 1px solid #000000;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover {
+	color: #333333;
+}
+
+p#nav {text-align: center; text-shadow: none!important;}
+
+p#backtoblog {display: none;}
+
+html[data-useragent*="AppleWebKit"] #loginform input {font-weight: 400;}
+
+
+@media screen and (max-width:768px){
+	body.login form#loginform,
+	body.login #login_error {
+		width:80%;
+	}
+}
+.toblog {display: none;}
+
+html[data-useragent*="AppleWebKit"] #loginform input {font-weight: 400;}
+
+

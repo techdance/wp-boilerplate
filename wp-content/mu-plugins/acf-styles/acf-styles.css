@@ -1,0 +1,11 @@
+/*---------------------------------------
+	ADD ACF STYLES
+---------------------------------------*/
+
+.flex-label label {
+    display: flex !important;
+    align-items: center;
+}
+
+
+

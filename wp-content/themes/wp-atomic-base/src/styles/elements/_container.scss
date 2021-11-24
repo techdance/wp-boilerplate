@@ -1,0 +1,27 @@
+.page {
+  max-width: 160rem;
+}
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  /*@include media-breakpoint-up(sm) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }*/
+}

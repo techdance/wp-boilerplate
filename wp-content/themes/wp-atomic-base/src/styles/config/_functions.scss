@@ -1,0 +1,37 @@
+// Margins
+@function get-margin( $variant ) {
+  @if map-has-key( $margins, $variant ) {
+      @return map-get( $margins, $variant );
+  }
+
+  @return $variant;
+}
+
+// Padding
+@function get-padding( $variant ) {
+  @if map-has-key( $padding, $variant ) {
+      @return map-get( $padding, $variant );
+  }
+
+  @return $variant;
+}
+
+// Hero Padding
+@function get-hero( $variant ) {
+  @if map-has-key( $hero, $variant ) {
+      @return map-get( $hero, $variant );
+  }
+
+  @return $variant;
+
+}
+
+// Section Padding
+@function get-section( $variant ) {
+  @if map-has-key( $sections, $variant ) {
+      @return map-get( $sections, $variant );
+  }
+
+  @return $variant;
+
+}

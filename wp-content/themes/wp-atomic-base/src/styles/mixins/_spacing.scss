@@ -1,0 +1,52 @@
+// Margins
+
+@mixin margin( $variant: sm ) {
+  $margin: get-margin( $variant );
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:not( :last-child ) {
+    margin-bottom: $margin;
+  }
+}
+
+// Padding
+
+@mixin padding( $variant: sm ) {
+  $padding: get-padding( $variant );
+
+  padding: $padding;
+}
+
+// Hero
+
+@mixin hero( $size: sm ) {
+  $padding: get-hero( $size );
+
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+
+// Sections
+
+@mixin section( $size: sm ) {
+  $padding: get-section( $size );
+
+  padding: $padding;
+}
+
+@mixin section-y( $size: sm ) {
+  $padding: get-section( $size );
+
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+@mixin section-x( $size: sm ) {
+  $padding: get-section( $size );
+
+  padding-left: $padding;
+  padding-right: $padding;
+}
